@@ -1,0 +1,6 @@
+mosspy
+pyyaml
+python-dotenv
+python-gitlab
+GitPython
+tqdm

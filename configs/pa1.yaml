@@ -1,0 +1,57 @@
+# programming language
+lang: c
+
+# output directory for storing html report
+output: /Users/esmaeil/MyData/MyProjects/cse101/pa1_report
+
+# directory for storing files
+files: /Users/esmaeil/MyData/MyProjects/cse101/files
+
+# repositories for base files
+base_repos:
+  - git@github.com:esmaeil-mirvakili/CSE101Examples.git
+
+# files that need to be excluded
+base_files:
+  - '*.c'
+  - '*.cpp'
+  - '*.cc'
+
+# gitlab group(s) of the course for current quarter
+this_quarter_groups:
+  - fall24
+
+# gitlab group(s) of the course for previous quarters
+previous_quarter_groups:
+  - winter24
+  - fall23
+  - spring23
+  - winter23
+  - spring22
+  - winter22
+  - spring21
+  - winter21
+
+# branch name
+assignment_branch: pa1
+
+# project path
+assignment_path: pa1/
+
+# files to compare
+assignment_files:
+  - Lex.c
+  - List.c
+
+# cooldown between moss requests
+moss_request_cooldown: 60
+
+# (optional) moss options
+# remove this part to use default options
+moss_options:
+  m: 20     # ignore limit
+  d: 0      # directory mode
+  x: 0      # experimental server
+  c: ""     # comment string
+  n: 1000   # number of matching files
+
