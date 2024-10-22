@@ -130,12 +130,15 @@ def is_empty(text):
 
 def check_file_validity(path, lang):
     if lang == 'c' or lang == 'cc':
-        with open(path, 'r') as f:
-            string = ''
-            for line in f.readlines():
-                if not line.strip().startswith('//'):
-                    string += line + '\n'
-            return not is_empty(remove_c_comments(string))
+        try:
+            with open(path, 'r') as f:
+                string = ''
+                for line in f.readlines():
+                    if not line.strip().startswith('//'):
+                        string += line + '\n'
+                return not is_empty(remove_c_comments(string))
+        except:
+            pass
     return True
 
 
@@ -209,6 +212,9 @@ def main():
     base_files = config['base_files']
 
     base_path = os.path.join(output_path, 'base')
+
+    if this_quarter_groups is None:
+        this_quarter_groups = []
 
     if not args.no_git_clone:
         setup_files(this_quarter_groups + previous_quarter_groups, files_path, branch=branch)

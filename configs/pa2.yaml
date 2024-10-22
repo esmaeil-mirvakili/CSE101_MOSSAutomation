@@ -2,7 +2,7 @@
 lang: c
 
 # output directory for storing html report
-output: /Users/esmaeil/MyData/MyProjects/cse101/pa1_report
+output: /Users/esmaeil/MyData/MyProjects/cse101/pa2_report
 
 # directory for storing files
 files: /Users/esmaeil/MyData/MyProjects/cse101/files
@@ -34,15 +34,16 @@ previous_quarter_groups:
   - winter21
 
 # branch name
-assignment_branch: pa1
+assignment_branch: pa2
 
 # project path
-assignment_path: pa1/
+assignment_path: pa2/
 
 # files to compare
 assignment_files:
-#  - Lex.c
-  - List.c
+  - FindPath.c
+  - Graph.c
+#  - List.c
 
 # cooldown between moss requests
 moss_request_cooldown: 60
