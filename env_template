@@ -1,0 +1,3 @@
+USER_ID=<moss user id>
+GITLAB_TOKEN=<gitlab token>
+GITLAB_URL=https://git.ucsc.edu

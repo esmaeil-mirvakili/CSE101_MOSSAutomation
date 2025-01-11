@@ -50,7 +50,7 @@ moss_request_cooldown: 60
 # (optional) moss options
 # remove this part to use default options
 moss_options:
-  m: 20     # ignore limit
+  m: 50     # ignore limit
   d: 0      # directory mode
   x: 0      # experimental server
   c: ""     # comment string

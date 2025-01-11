@@ -2,10 +2,7 @@
 lang: c
 
 # output directory for storing html report
-output: /Users/esmaeil/MyData/MyProjects/cse101/pa2_report
-
-# directory for storing files
-files: /Users/esmaeil/MyData/MyProjects/cse101/files
+output: /Users/esmaeil/MyData/MyProjects/cse101/pa3
 
 # repositories for base files
 base_repos:
@@ -19,11 +16,10 @@ base_files:
 
 # gitlab group(s) of the course for current quarter
 this_quarter_groups:
-#  - fall24
+  - fall24
 
 # gitlab group(s) of the course for previous quarters
-previous_quarter_groups:
-  - fall24
+#previous_quarter_groups:
 #  - winter24
 #  - fall23
 #  - spring23
@@ -34,16 +30,15 @@ previous_quarter_groups:
 #  - winter21
 
 # branch name
-assignment_branch: pa2
+assignment_branch: pa3
 
 # project path
-assignment_path: pa2/
+assignment_path: pa3/
 
 # files to compare
 assignment_files:
-#  - FindPath.c
+  - FindComponents.c
   - Graph.c
-#  - List.c
 
 # cooldown between moss requests
 moss_request_cooldown: 120
